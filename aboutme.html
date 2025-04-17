@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Me</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    .darkblue-text {
+      color: #001f3f;
+      font-weight: bold;
+      font-size: 1.4rem;
+      line-height: 1.8;
+      text-align: center;
+      max-width: 700px;
+      margin: 50px auto;
+      animation: floatText 4s ease-in-out infinite;
+    }
+
+    @keyframes floatText {
+      0%   { transform: translateY(0px); }
+      50%  { transform: translateY(-10px); }
+      100% { transform: translateY(0px); }
+    }
+  </style>
+</head>
+<body>
+  <!-- 背景 canvas -->
+  <div class="background">
+    <canvas id="bubbles"></canvas>
+  </div>
+
+  <nav class="bubble-nav">
+    <a href="index.html">Home</a>
+    <a href="aboutme.html">About Me</a>
+    <a href="ordinaryexperience.html">Ordinary Experience</a>
+    <a href="funnystories.html">Funny Stories</a>
+    <a href="brainstormideas.html">Ideas</a>
+  </nav>
+
+
+  <!-- 小鱼 -->
+  <img src="other/fish.png" class="fish" alt="fish" />
+
+  <!-- 返回主页 -->
+  <!-- <a href="index.html" style="margin: 20px; display: inline-block; color: white;">← Go Home</a> -->
+
+  <!-- 标题 -->
+  <h1 class="page-title">About Myself</h1>
+
+  <!-- 自我介绍文字 -->
+  <p class="darkblue-text">
+    I am a software engineer with 2+ years of working experience.<br>
+    Love coding and fondant.<br>
+    Full of creativity and extraordinary ideas.
+  </p>
+
+  <!-- 背景动画脚本 -->
+  <script src="js/background.js"></script>
+</body>
+</html>
